@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopayo</title>
+
+    <!-- googlefonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- swiperJS link css -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg">
+          <div class="container px-4 px-lg-5">
+            <a href="./index.html" class="navbar-brand text-white shopayo"><img class="logo" src="./assets/logo.png" alt="shopayo logo"> Shopayo</a>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#!"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+              </ul>
+
+              <a href="./sign-in.html" class="account active"><img class="user-profile" src="./assets/person-circle.svg" alt=""></a>
+            </div>
+              
+            <a href="./checkout.html" class="btn btn-outline-light cart-button">
+              <i class="bi-cart-fill me-1"></i>
+              <img src="./assets/cart-shopping-solid.svg" alt="" width="30px">
+              <span class="badge bg-dark text-white ms-1 rounded-pill cart js-cart-quantity"
+                ></span
+              >
+            </a>
+          </div>  
+        </nav>
+      </header>
+
+      <!-- main-section -->
+      <section id="main-section">
+        <div class="container col-xxl-8 px-4 pt-5 pb-sm-1 pb-md-3 pb-lg-5  main-sec hidden">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="./assets/main.jpg" class="d-block mx-lg-auto img-fluid main-image" alt="main image" width="500" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="mb-3">WELCOME TO <span id="Shopayo">SHOPPAYO</span></h1>
+              <p class="lead">Bringing out the fashion beauty in everyone.</p>
+              <a href="./products.html" class="btn btn-dark">Shop Now <img src="./assets/bag-shopping-solid.svg" alt="" width="15px"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+ 
+
+    <section class="new-arrivals">
+      <div class="hero-text">
+        <h2>New Arrivals</h2>
+      </div>
+
+      <!-- new arrivals -->
+      <div class="new-arrivals-cards">
+        <div class="card" style="width: 25rem">
+          <img src="./assets/fw1.jpg" class="card-img-top" alt="..." height="400px"/>
+          <div class="card-body">
+            <h5 class="card-title">Sweet looking gown</h5>
+            <a href="./products.html" class="link">
+              Explore Now!  <a href="./products.html"> <img class="animate-arrow" src="./assets/arrow.svg" alt="" width="40px" height="20px"></a>
+            </a>
+          </div>
+        </div> 
+
+          <div class="card" style="width: 25rem">
+            <img src="./assets/mc1.jpg" class="card-img-top" alt="..." height="400px"/>
+            <div class="card-body">
+              <h5 class="card-title">Cool looking matching couple nightwear</h5>
+              <a href="./products.html" class="link">
+                Explore Now!  <a href="./products.html"> <img class="animate-arrow" src="./assets/arrow.svg" alt="" width="40px" height="20px"></a>
+              </a>
+            </div>
+          </div>
+      </div>
+      <div class="card card3" style="width: 25rem">
+        <img src="./assets/l1.jpg" class="card-img-top" alt="..." height="400px"/>
+        <div class="card-body">
+          <h5 class="card-title">Nice looking lingerie</h5>
+          <a href="./products.html" class="link">
+            Explore Now!  <a href="./products.html"> <img class="animate-arrow" src="./assets/arrow.svg" alt="" width="40px" height="20px"></a>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about-section -->
+    <section class="about">
+      <div class="ii container sec-1 hidden">
+        <div class="row">
+          <h2>What we offer</h2>
+          <p class="paragraph">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+          maxime magnam, cupiditate explicabo, sapiente placeat veritatis totam
+          deserunt perspiciatis eveniet esse nobis repellendus dolores unde
+          consequuntur ad sequi quasi laudantium.
+          </p>
+        </div>
+      </div>
+
+      <div class="main-about">
+        <div class="text sec-2 hidden">
+          <h3><a href="./products.html">Female Wears</a></h3>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+            accusantium. Ea, mollitia harum deleniti temporibus magnam
+            voluptatum necessitatibus amet corrupti.
+          </p>
+        </div>
+        <img class="images sec-2 hidden" src="./assets/fw1.jpg" alt="" />
+      </div>
+
+      <div class="about-main">
+        <img class="images sec-3 hidden" src="./assets/mc1.jpg" alt="" />
+        <div class="text sec-3 hidden">
+          <h3><a href="./products.html">Matching Couple Nightwears</a></h3>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+            accusantium. Ea, mollitia harum deleniti temporibus magnam
+            voluptatum necessitatibus amet corrupti.
+          </p>
+        </div>
+      </div>
+
+      <div class="main-about">
+        <div class="text sec-4 hidden">
+          <h3><a href="./products.html">Lingerie</a></h3>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+            accusantium. Ea, mollitia harum deleniti temporibus magnam
+            voluptatum necessitatibus amet corrupti.
+          </p>
+        </div>
+        <img class="images sec-4 hidden" src="./assets/l1.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- community section -->
+    <section class="community-section">
+      <div class="community-info">
+        <h2>JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO</h2>
+        <p>Type your email down below and be young wild generation</p>
+
+        <div class="form">
+          <input type="email" placeholder="Add email here">
+          <button type="submit" class="btn btn-dark">SEND</button>
+        </div>
+      </div>
+    </section>
+    <!-- testimonials -->
+
+    <!-- <section class="testimonials">
+      <h2>What our customers say about us</h2>
+
+
+
+      <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+              <div class="card">
+                <img src="./assets/testiomonial image .png" class="testiomonial-image" alt="..."/>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+  
+            <div class="slide">
+              <div class="card">
+                <img src="./assets/testiomonial image .png" class="testiomonial-image" alt="..."/>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+  
+            <div class="slide">
+              <div class="card">
+                <img src="./assets/testiomonial image .png" class="testiomonial-image" alt="..."/>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="card">
+                <img src="./assets/testiomonial image .png" class="testiomonial-image" alt="..."/>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="card">
+                <img src="./assets/testiomonial image .png" class="testiomonial-image" alt="..."/>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="card">
+                <img src="./assets/testiomonial image .png" class="testiomonial-image" alt="..."/>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="card">
+                <img src="./assets/testiomonial image .png" class="testiomonial-image" alt="..."/>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="card">
+                <img src="./assets/testiomonial image .png" class="testiomonial-image" alt="..."/>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="card">
+                <img src="./assets/testiomonial image .png" class="testiomonial-image" alt="..."/>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    </section> -->
+
+    <!-- footer -->
+    <div class="footer">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h4><img class="footer-logo" src="./assets/logo.png" alt="shopayo logo"></h4>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 a">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 a">About</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 a">Products</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 a">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h4><img class="footer-logo" src="./assets/logo.png" alt="shopayo logo"></h4>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 a">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 a">About</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 a">Products</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 a">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h4><img class="footer-logo" src="./assets/logo.png" alt="shopayo logo"></h4>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 a">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 a">About</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 a">Products</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 a">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h4>Subscribe to our newsletter</h4>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-dark subscribe-button type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 b">
+          <p>© Shopayo. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3 social-media"><a class="link-body-emphasis" href="#"><img src="./assets/facebook-brands-solid.svg" class="bi" width="25" height="25"></img></a></li>
+            <li class="ms-3 social-media"><a class="link-body-emphasis" href="#"><img src="./assets/instagram-brands-solid.svg" class="bi" width="25" height="25"></img></a></li>
+            <li class="ms-3 social-media"><a class="link-body-emphasis" href="#"><img src="./assets/twitter-brands-solid.svg" class="bi" width="25" height="25"></img></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./scripts/script.js"></script>
+  </body>
+</html>
