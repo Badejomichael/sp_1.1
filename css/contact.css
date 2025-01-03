@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.navbar {
+  background-color: #ffc96f;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: white;
+  padding-bottom: 0;
+  border-bottom: 2px white solid;
+  transition: 0.3s ease-out;
+}
+
+.active:hover {
+  padding-bottom: 0;
+  border-bottom: 2px black solid;
+}
+
+.account {
+  padding-right: 30px;
+}
+
+.user-profile {
+  width: 40px;
+}
+
+.user-profile:hover {
+  filter: contrast(0) brightness(100);
+}
+
+.account.active {
+  filter: contrast(0) brightness(100);
+  border: none;
+}
+
+.contact-section {
+  background-color: white;
+  padding: 60px 20px;
+}
+
+.contact-container{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.p {
+  text-align: center;
+  /* margin-bottom: 40px; */
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.contact-form {
+   
+  /* background-color: #fff; */
+  background-color: #f7f4e9;
+  padding: 20px;
+  padding-left: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.contact-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-input[type="text"],
+.contact-input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.contact-input:focus,
+textarea:focus {
+  border-color: #ffc96f;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.contact-form-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 40px 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+
+.footer {
+  background-color: #ffc96f;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.a {
+  color: black;
+}
+
+.a:hover {
+  border-bottom: none;
+  color: white;
+}
+
+.footer-logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin: auto 0;
+}
+
+.social-media{
+  transition: all 0.2s ;
+}
+
+.social-media:hover{
+  filter: contrast(0) brightness(100);
+  transform: translateY(-4px);
+}
+
+.b {
+  border-top: 1.5px solid white;
+}
+
+/* .subscribe-button,
+.btn-outline-dark, .cart-button {
+  transition: transform 0.2s;
+}
+
+.subscribe-button:hover,
+.btn-outline-dark:hover, .cart-button:hover {
+  transform: scale(1.1);
+}
+
+.subscribe-button:active,
+.btn-outline-dark:active{
+  transform: translateY(7px);
+}
+
+.subscribe-button:active,
+.btn-outline-dark:active, .cart-button:active {
+  transform: translateY(5px);
+}
+
+.sec-6.hidden {
+  transform: translateY(200px);
+  transition-duration: 0.5s;
+}
+
+.sec-6.show {
+  transform: translateY(0);
+} */
+
+@media (max-width: 990px) {
+  .nav-link:hover {
+    width: 100px;
+  }
+
+  .cart-button{
+    position: absolute;
+    top: 15px;
+    left: 60vw;
+  }
+
+  /* .account {
+    position: absolute;
+    top: 13px;
+    left: 50vw;
+  } */
+}
+
+ @media (max-width: 440px) {
+  .cart-button{
+    position: absolute;
+    left: 56vw;
+  }
+ }
+
+ @media (max-width: 700px) {
+  /* .account {
+    top: 17px;
+  } */
+
+  .user-profile {
+    width: 35px;
+  }
+}
+
+@media (max-width: 471px) {
+  .shopayo {
+    font-size: 1rem;
+  }
+
+
+  .cart-button {
+    left: 45vw;
+  }
+}
